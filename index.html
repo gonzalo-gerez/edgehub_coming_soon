@@ -1,1 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <img src="EdgeHub_Negativo_Transparente.png" alt="Logo" class="logo">
+
+    <div class="container">
+        <h1>Hey! EdgeHub Website is about to be launched!</h1>
+        <h2>We're bridging the gap between your marketing technology and your team's ambitions. Say goodbye to
+            fragmented data and hello to seamless integration. </h2>
+    </div>
+
+    <form id="contactForm" class="formulario" action="mailto:info@edgehub.tech" method="post" enctype="text/plain">
+        <input id="emailInput" type="text" placeholder="Enter your E-mail" required>
+        <button type="submit" onclick="enviarCorreo()">Notify me</button>
+    </form>
+
+    <script>
+        function enviarCorreo() {
+            const email = document.getElementById("emailInput").value;
+            const asunto = "I would like to be notified.";
+            const mailtoUrl = `mailto:info@edgehub.tech?subject=${encodeURIComponent(asunto)}&body=${encodeURIComponent(email)}`;
+
+            window.location.href = mailtoUrl;
+        }
+    </script>
+</body>
+
+</html>

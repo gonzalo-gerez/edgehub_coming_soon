@@ -1,0 +1,73 @@
+body {
+    font-family: 'Adelle Sans Devanagari', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Distribuye espacio entre elementos */
+    min-height: 100vh;
+    color: #001ADB; 
+}
+
+.logo {
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    height: auto;
+    width: 230px;
+}
+
+.container {
+    text-align: center;  /* Centra el texto horizontalmente */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centra el texto verticalmente */
+    height: 70vh; 
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    color: white;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-top: 0;
+    color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.formulario {
+    background-color: white;
+    margin-bottom: 20px;
+    width: 100%; /* Ajusta el ancho del formulario */
+    max-width: 700px; /* Establece un ancho máximo */
+    position: relative;
+    display: flex;
+    align-items: stretch;
+}
+
+input[type="text"] {
+    width: 100%;
+    height: 50px;
+    padding: 20px;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #001ADB; /* Color del botón principal */
+    width: 30%;
+    color: white;
+
+    border: none;
+    cursor: pointer;
+}
