@@ -53,6 +53,7 @@ h2 {
     position: relative;
     display: flex;
     align-items: stretch;
+    border-radius: 5px;
 }
 
 input[type="text"] {
@@ -61,13 +62,15 @@ input[type="text"] {
     padding: 20px;
     border: 1px solid transparent;
     box-sizing: border-box;
+    border-radius: 5px;
 }
 
 button {
     background-color: #001ADB; /* Color del botón principal */
     width: 30%;
     color: white;
-
     border: none;
     cursor: pointer;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
